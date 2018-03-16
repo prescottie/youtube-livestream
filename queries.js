@@ -6,10 +6,15 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
-var connectionString = 'postgres://localhost:5432/livechat';
+var connectionString = 'postgres://localhost:5432/livestream';
 var db = pgp(connectionString);
 
 // add query functions
+
+function getChatMessagesChannelName(req, res, next, channelName) {
+  
+
+}
 
 module.exports = {
 
